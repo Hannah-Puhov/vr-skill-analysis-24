@@ -21,7 +21,7 @@ def stats_per_stroke(stroke_arr: np.ndarray):
     '''
 
     if not stroke_arr.any():
-        return 0, 0, 0
+        return 0, 0, 0, 0
 
     mean = np.mean(stroke_arr)
     med_ = np.median(stroke_arr)
@@ -109,7 +109,8 @@ def stroke_force(strokes: np.ndarray, stroke_times: np.ndarray,
         Returns:
             forces (np.ndarray): Average stroke forces for each stroke in procedure
     '''
-
+#165180655
+#1651800658
     avg_stroke_force = []
     for i in range(sum(strokes)):
 
